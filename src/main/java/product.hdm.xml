@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.Product" table="product">
+        <id name="id" column="id" type="long">        
+            <generator class="increment"/>
+        </id>
+        <property name="name" column="name" type="string" not-null="true"/>
+        <property name="cost" column="cost" type="long" not-null="true"/>
+        <property name="date" column="date" type="date" not-null="true"/>
+    </class>
+</hibernate-mapping>
